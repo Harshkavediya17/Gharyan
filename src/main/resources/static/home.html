@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="home.css">
+
+    <title>ghargyan.ai | Home</title>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-house"></i>
+        <span>ghargyan.ai</span>
+    </div>
+
+    <div class="nav-right">
+
+            <span id="userArea">
+                <i class="fa-solid fa-location-dot"></i>
+                Bangalore
+            </span>
+
+        <button class="profile-btn">
+            <i class="fa-solid fa-user"></i>
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- MAIN CONTENT -->
+
+<main class="home-container">
+
+    <section class="welcome">
+
+        <p class="small-heading">
+            WELCOME TO GHARGYAN.AI
+        </p>
+
+        <h1>
+            Find the right property.
+            <br>
+            <span>Make the right investment.</span>
+        </h1>
+
+        <p class="subtitle">
+            Whether you're looking to invest or searching
+            for your next property, ghargyan.ai helps you
+            make smarter real-estate decisions.
+        </p>
+
+    </section>
+
+
+    <!-- OPTIONS -->
+
+    <section class="options">
+
+        <!-- ADD PROPERTY -->
+
+        <div class="option-card">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Add a Property
+                </h2>
+
+                <p>
+                    Have a property to sell or invest in?
+                    Add its details and reach potential buyers
+                    and investors.
+                </p>
+
+                <button onclick="addProperty()">
+                    Add Property
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FIND PROPERTY -->
+
+        <div class="option-card">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Find a Property
+                </h2>
+
+                <p>
+                    Explore properties based on your location,
+                    investment goals, budget and preferences.
+                </p>
+
+                <button onclick="findProperty()">
+                    Explore Properties
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK INFO -->
+
+    <section class="quick-info">
+
+        <div>
+            <i class="fa-solid fa-chart-line"></i>
+
+            <div>
+                <strong>Smart Investments</strong>
+                <span>Make data-driven decisions</span>
+            </div>
+        </div>
+
+
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+                <strong>Location Focused</strong>
+                <span>Discover properties around you</span>
+            </div>
+        </div>
+
+
+        <div>
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <div>
+                <strong>Built for Investors</strong>
+                <span>Compare before you invest</span>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    background:
+            linear-gradient(135deg, #f7f7ff, #e9e3ff);
+
+    color: #1f1f1f;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(255,255,255,0.8);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    color: #5630b5;
+}
+
+
+.logo i {
+
+    font-size: 22px;
+}
+
+
+.nav-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+#userArea {
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+
+#userArea i {
+
+    color: #5630b5;
+
+    margin-right: 5px;
+}
+
+
+.profile-btn {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #5630b5;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.home-container {
+
+    width: 86%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 75px 0;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+
+    max-width: 750px;
+}
+
+
+.small-heading {
+
+    color: #5630b5;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.welcome h1 {
+
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+
+.welcome h1 span {
+
+    color: #5630b5;
+}
+
+
+.subtitle {
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+}
+
+
+/* =========================
+   OPTIONS
+========================= */
+
+.options {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 55px;
+}
+
+
+.option-card {
+
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    display: flex;
+
+    gap: 25px;
+
+    box-shadow:
+            0 10px 35px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+
+
+.option-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+            0 18px 40px rgba(86,48,181,0.18);
+}
+
+
+.icon-box {
+
+    min-width: 60px;
+
+    height: 60px;
+
+    border-radius: 15px;
+
+    background: #eee9ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #5630b5;
+
+    font-size: 24px;
+}
+
+
+.card-content h2 {
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+
+.card-content p {
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+.card-content button {
+
+    border: none;
+
+    background: #5630b5;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.card-content button:hover {
+
+    background: #432393;
+}
+
+
+.card-content button i {
+
+    margin-left: 8px;
+}
+
+
+/* =========================
+   QUICK INFO
+========================= */
+
+.quick-info {
+
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.quick-info > div {
+
+    background: rgba(255,255,255,0.65);
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+}
+
+
+.quick-info > div > i {
+
+    color: #5630b5;
+
+    font-size: 22px;
+}
+
+
+.quick-info strong {
+
+    display: block;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+
+.quick-info span {
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .options {
+
+        grid-template-columns: 1fr;
+    }
+
+    .quick-info {
+
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h1 {
+
+        font-size: 36px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .navbar {
+
+        padding: 0 5%;
+    }
+
+    #userArea {
+
+        display: none;
+    }
+
+    .home-container {
+
+        width: 90%;
+    }
+
+}
